@@ -1,14 +1,8 @@
 # Created by newuser for 5.9
-#
-#
-#
-#
+
+
 # Path to your oh-my-zsh (if you use it) or leave empty
 # export ZSH="$HOME/.oh-my-zsh"
-
-# Set a minimal prompt with arrow
-# PROMPT="%F{green}%~%f %F{cyan}➜%f "
-
 
 # Editor used by CLI
 export SUDO_EDITOR="$EDITOR"
