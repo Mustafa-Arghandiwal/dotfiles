@@ -17,6 +17,11 @@ if command -v eza &> /dev/null; then
 fi
 
 alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
+ffn() {
+  local files
+  files=$(fzf -m --preview 'bat --style=numbers --color=always {}')
+  [[ -n "$files" ]] && nvim ${=files}
+}
 
 if command -v zoxide &> /dev/null; then
   alias cd="zd"
