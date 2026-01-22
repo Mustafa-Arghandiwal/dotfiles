@@ -1,4 +1,43 @@
 return {
+  -- {
+  --   'luckasRanarison/tailwind-tools.nvim',
+  --   name = 'tailwind-tools',
+  --   dependencies = {
+  --     'nvim-treesitter/nvim-treesitter',
+  --     'nvim-lua/plenary.nvim',
+  --     'nvim-telescope/telescope.nvim',
+  --     'neovim/nvim-lspconfig',
+  --   },
+  --   config = function()
+  --     require('tailwind-tools').setup {
+  --       server = {
+  --         override = true,
+  --         settings = {
+  --           -- Optional: add custom Tailwind LSP settings here
+  --         },
+  --         on_attach = function(client, bufnr)
+  --           -- Optional: custom behavior when the LSP attaches
+  --         end,
+  --       },
+  --       document_color = {
+  --         enabled = true,
+  --         kind = 'background',
+  --         inline_symbol = '󰝤',
+  --         debounce = 200,
+  --       },
+  --       conceal = {
+  --         enabled = false,
+  --         symbol = '󱏿',
+  --         highlight = {
+  --           fg = '#38BDF8',
+  --         },
+  --       },
+  --       cmp = {
+  --         highlight = 'foreground',
+  --       },
+  --     }
+  --   end,
+  -- },
 
   {
     'windwp/nvim-ts-autotag',

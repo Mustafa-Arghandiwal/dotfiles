@@ -97,6 +97,10 @@ vim.keymap.set('n', '<S-Tab>', '<cmd>bp<CR>', { desc = 'Previous Buffer' })
 vim.keymap.set('n', '<leader>c', '<cmd>bd<CR>', { desc = 'Delete Buffer' })
 vim.keymap.set('n', '<leader>w', '<cmd>:w<CR>', { desc = 'Save' })
 
+-- screenshot with silicon nvim
+vim.keymap.set('v', '<leader>ss', function()
+  require('nvim-silicon').shoot()
+end, { desc = 'Create code screenshot' })
 -- Diagnostic keymaps
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
 
@@ -164,6 +168,7 @@ rtp:prepend(lazypath)
 --
 -- NOTE: Here is where you install your plugins.
 require('lazy').setup({
+
   -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
   'NMAC427/guess-indent.nvim', -- Detect tabstop and shiftwidth automatically
 
