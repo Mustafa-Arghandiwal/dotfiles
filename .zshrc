@@ -57,10 +57,12 @@ alias gcam='git commit -a -m'
 alias gcad='git commit -a --amend'
 
 # History
+HISTFILE=~/dotfiles/.zsh_history
 HISTSIZE=32768
 SAVEHIST=32768
 # HISTFILE=~/.zsh_history
 setopt append_history
+setopt share_history
 setopt hist_ignore_dups
 setopt hist_ignore_space
 
