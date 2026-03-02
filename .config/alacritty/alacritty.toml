@@ -30,3 +30,6 @@ bindings = [
 # [cursor]
 # style = {shape = "Beam"}
 
+
+[terminal]
+osc52 = "CopyPaste"
