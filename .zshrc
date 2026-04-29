@@ -170,3 +170,5 @@ if command -v starship &> /dev/null; then
   eval "$(starship init zsh)"
 fi
 
+bindkey '^R' history-incremental-search-backward
+tmux source-file ~/dotfiles/.tmux.conf
