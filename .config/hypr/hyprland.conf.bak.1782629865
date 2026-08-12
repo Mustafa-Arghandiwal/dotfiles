@@ -29,7 +29,7 @@ source = ~/.config/hypr/autostart.conf
 # env = __GLX_VENDOR_LIBRARY_NAME,nvidia
 
 
-monitor=eDP-1,3840x2160@60.00,3040x64,2.50
+monitor=eDP-1,3840x2160@60.00,3040x64,2.40
 # monitor=DP-1,1920x1080@60.00,1120x0,1.00
 # monitor=eDP-1,3840x2160@60.00,1920x0,2.00
 # monitor=DP-1,1920x1080@60.00,0x0,1.00

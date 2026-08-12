@@ -410,6 +410,7 @@ require('lazy').setup({
     },
   },
   {
+
     -- Main LSP Configuration
     'neovim/nvim-lspconfig',
     dependencies = {
@@ -653,6 +654,7 @@ require('lazy').setup({
         'tailwindcss',
         'astro',
         'lua_ls',
+        'typescript-language-server',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
