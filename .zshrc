@@ -171,4 +171,13 @@ if command -v starship &> /dev/null; then
 fi
 
 bindkey '^R' history-incremental-search-backward
-tmux source-file ~/dotfiles/.tmux.conf
+# tmux source-file ~/dotfiles/.tmux.conf
+# alias tmux="tmux -f ~/.config/tmux/tmux.conf"
+
+# pnpm
+export PNPM_HOME="/home/mustafa/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME/bin:"*) ;;
+  *) export PATH="$PNPM_HOME/bin:$PATH" ;;
+esac
+# pnpm end
