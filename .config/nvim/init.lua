@@ -10,6 +10,23 @@ vim.o.tabstop = 4
 vim.o.shiftwidth = 4
 vim.o.expandtab = true
 
+-- The winbar thing (file name at top)
+_G.MyWinbar = function()
+  local path = vim.fn.expand '%:~:.'
+  if path == '' then
+    return ''
+  end
+
+  local width = vim.api.nvim_win_get_width(0)
+  local path_width = vim.fn.strdisplaywidth(path)
+  local padding = math.max(0, math.floor((width - path_width) / 2))
+
+  return string.rep(' ', padding) .. path
+end
+
+vim.o.winbar = '%{%v:lua.MyWinbar()%}'
+-------
+
 vim.g.have_nerd_font = true
 
 -- [[ Setting options ]]
@@ -835,6 +852,7 @@ require('lazy').setup({
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
       vim.cmd.colorscheme 'tokyonight-night'
+      vim.api.nvim_set_hl(0, 'WinBar', { link = 'Normal' })
     end,
   },
 
